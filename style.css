@@ -1,0 +1,84 @@
+*{
+margin: 0;
+padding: 0;
+}
+body{
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0px;
+height: 100vh;
+background-color: dodgerblue;
+}
+.calculator{
+  border: solid ;
+  width: 350px;
+  height: 450px;
+  border-radius: 10px;
+  background-color: hwb(0 0% 100%);
+  padding: 20px;
+
+}
+.display{
+  margin: 20px;
+  padding: 20px;
+  width:265px;
+  background-color: white;
+}
+.button{
+  width: 300px;
+  margin: 10px 25px 0 15px;
+  padding: 10px 0px 10px 20px  ;
+  
+
+}
+button[type="button"]{
+  width: 58px;
+  height: 50px;
+  margin: 5px;
+  font-size: 22px;
+  line-height: 30px;
+  border-radius: 3px;
+  border: 1px solid #d9d9d9;
+
+  color: blue;
+
+}
+button.op{
+background-color: rgb(155, 155, 155);
+}
+button.no{
+  color: black;
+ }
+
+button:hover{
+  background:none;
+  color: white;
+}
+  .animation{
+border: solid;
+margin-top: 550px;
+animation: slide 10s linear infinite;
+  
+  }
+  
+    
+  @keyframes slide{
+    0%{
+      transform:translatex(300%);
+
+    }
+    100%{
+      transform: translateX(-300%);
+    }
+  }
+  .p{
+    position: absolute;
+    bottom: 0;
+    font-size: xx-large;
+    animation: thank 10s linear infinite ;
+  }
+  @keyframes thank{
+    0%{ transform: translateX(300%);}
+    100%{ transform: translateX(-300%);}
+  }
